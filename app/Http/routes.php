@@ -1,4 +1,8 @@
 <?php
+Route::get('/', function(){
+	return view('layouts.admin');
+});
+
 
 Route::resource('products', 'ProductsController');
 Route::resource('users', 'UsersController');
